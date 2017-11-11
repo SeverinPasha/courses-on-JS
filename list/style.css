@@ -1,4 +1,14 @@
+#todoList{
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    background-color: red;
+}
 
-.btnADD {
-  
+#kek{
+    outline: none;
+    border: none;
+    padding: 5px;
+    background-color: #ccc;
 }

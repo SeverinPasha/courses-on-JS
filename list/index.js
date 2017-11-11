@@ -1,13 +1,27 @@
-function add() {
-    var a = document.getElementById("input").value;
-    var b = document.getElementById("items");
-    var c = document.createElement("li");
-    c.innerHTML = a;
-    b.append(c);
-    document.getElementById("input").value = "";
+function todoList() {
+    var item = document.getElementById('todoInput').value;
+    var text = document.createTextNode(item);
+    var checkbox = document.createElement('input');
+    var button = document.createElement('button');
 
-//нифига еще не сделал
-//всё доделаю   
-//но не сразу
-//пока работает только добавление дел
+    checkbox.type = "checkbox";
+    checkbox.name = "name";
+    checkbox.value = "value";
+    var newItem = document.createElement("div");
+    
+   
+
+    if(item !== "" ){
+        newItem.appendChild(checkbox);
+        newItem.appendChild(text);
+        newItem.appendChild(button);
+        
+        document.getElementById("todoList").appendChild(newItem)
+        document.getElementById("todoInput").value = "";
+    }
+    else {
+        alert ("Заполните поле");
+    }
+
+
 }

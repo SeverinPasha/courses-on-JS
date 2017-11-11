@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ToDoList</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-<h1>попутно тестирую git test</h1>
-    <div>
-        <input type="text" placeholder="введите дело" id="input" required>
-        <buttun class="btnADD" onClick="add()" id="add_txt">добавить дело</buttun>
-        <ul id="items">
-        </ul>
-    </div>
-
-
-    <script src="index.js"></script>
-</body>
+<html>
+    <head><link href="style.css" rel="stylesheet"></head>
     
+    <body>
+        <form id="todoForm">
+            To Do List: <br>
+            <input id="todoInput">
+            <button type="button" id="kek" onclick="todoList()">Add</button>
+        </form>
+        <div id="todoList">
+        </div>
+        <script src="index.js"></script>
+
+    </body>
 </html>
